@@ -1,0 +1,36 @@
+/* BACKGROUND STYLING
+ * Styling for large backgrounds
+ * ---------------------------------------------------------------------- */
+
+#floor-plans div.tower-container img.tower-mask {
+  position: absolute;
+  bottom: 0px;
+}
+
+div#home.panel {
+  background: none;
+}
+
+div#residences.panel {
+  background: none;
+}
+
+div#floor-plans.panel {
+  background: none;
+}
+
+div#building.panel {
+  background: none;
+}
+
+div#neighborhood.panel {
+  background: none;
+}
+
+div#stories.panel {
+  background: none;
+}
+
+li.gallery-1 {
+  background: none;
+}

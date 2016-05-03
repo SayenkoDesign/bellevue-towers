@@ -1,0 +1,31 @@
+  /* TYPOGRAPHY: NAV
+   * Typography styling for nav elements
+   * ---------------------------------------------------------------------- */
+
+  .nav-primary ul li,
+  .nav-sidebar ul li {
+    font-weight: 400;
+  }
+  
+  ul.slider-content div.left-column h3 {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  #stories #slider-stories div.left-column div.header p.title {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  #stories #slider-stories div.left-column blockquote {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+#floor-plans div.tower-container img.tower-mask {
+  position: absolute;
+  bottom: 5px;
+}

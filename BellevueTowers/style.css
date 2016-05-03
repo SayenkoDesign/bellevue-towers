@@ -1,0 +1,1264 @@
+/*
+Theme Name: Bellevue Towers
+Description: Custom WordPress theme built exclusively for use on the Bellevue Towers website
+Version: 1.0
+Author: Christine Estrada via Methodologie
+Author URI: http://www.methodologie.com
+*/
+
+
+/* RESET
+ * Reset default browser CSS. Based on work by Eric Meyer: 
+ * http://meyerweb.com/eric/tools/css/reset/index.html
+ * ---------------------------------------------------------------------- */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* float clearing */
+.group:after,
+.container:after { 
+	content: ".";  
+ 	display: block; 
+ 	height: 0; 
+ 	clear: both; 
+ 	visibility: hidden; 
+}
+
+.group,
+.container {
+	display: inline-block;
+}
+
+/* Hides from IE-mac */
+* html .group,
+* html .container {
+	height: 1%;
+}
+
+.group,
+.container {
+	display: block;
+}p
+/* End hide from IE-mac */
+
+
+
+html, body {
+  width: 100%;
+}
+
+.wf-loading {
+  visibility: hidden;
+}
+
+.wf-active {
+  visibility: visible;
+}
+
+
+html { padding:0; margin: 0 }
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; padding: 0; font-size: 12px;
+}
+
+/* SUPER IMAGE BG */
+#overlay {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	color: #fff;
+	padding: 10px;
+	background: #000;
+	width: 255px;
+	border-top: solid 1px #d4d4d4;
+	border-left: solid 1px #d4d4d4;
+	border-right: solid 1px #666;
+	border-bottom: solid 1px #666;	
+	z-index:1;
+}
+
+#transition { 
+  width: 100%;
+}
+
+a.activeslide { 
+  background: red; 
+}
+
+#superbgimage { 
+  display: none; 
+  background: #fff url('images/ajax-loader.gif') no-repeat center center;
+}
+
+#superbgimage img { 
+  image-rendering: optimizeQuality; 
+  -ms-interpolation-mode: bicubic; 
+}
+
+
+
+
+/* BACKGROUND STYLING
+ * Styling for large backgrounds
+ * ---------------------------------------------------------------------- */
+
+div#home.panel {
+  background: url('images/bg/homeLand.jpg') no-repeat top left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.panel.loading {
+  background: url('images/ajax-loader.gif') no-repeat center center;
+}
+
+
+
+
+/* TYPOGRAPHY
+ * Styling for typographical elements
+ * ---------------------------------------------------------------------- */
+
+body {
+  font-family: "klavika-web-1","klavika-web-2",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:link:hover {
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+  /* TYPOGRAPHY: NAV
+   * Typography styling for nav elements
+   * ---------------------------------------------------------------------- */
+
+  .nav-primary ul li,
+  .nav-sidebar ul li {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+  
+  .nav-social-media ul li {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+
+  /* TYPOGRAPHY: CONTENT AREAS
+   * Typography styling for content areas
+   * ---------------------------------------------------------------------- */
+
+  #brokers div.content-container,
+  #contact-us div.content-container,
+  #register-here div.content-container,
+  #blog div.content-container,
+  #press div.content-container,
+  #news div.content-container,
+  #downloads div.content-container,
+  div.content-sidebar ul {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  
+  #press div.content-container a,
+  #news div.content-container a {
+    font-weight: bold;
+  }
+  
+
+  /* TYPOGRAPHY: FLOOR PLAN FINDER
+   * Typography styling for floor plan finder
+   * ---------------------------------------------------------------------- */
+
+  #floor-plans div.filter-container div.instructions p {
+    font-family: Arial, sans-serif;
+    font-size: 10px;    
+    line-height: 12px;
+    margin-bottom: 0;
+  } 
+    
+
+
+
+/* SITE STRUCTURE
+ * Structural elements
+ * ---------------------------------------------------------------------- */
+
+body#panels {
+  overflow: hidden;
+  display: none;
+}
+
+div.header-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  z-index: 1;
+  background: transparent;
+}
+
+body#panels div.header-container {
+  position: fixed;
+}
+
+div.panel {
+  position: absolute;
+  min-width: 100%;
+}
+
+div.panel-container {
+  width: 1192px;
+  margin: 0 auto;
+}
+
+div.content-container {
+  float: left;
+  width: 766px;
+  height: 379px;
+}
+body[id="lanai"] .content-container{
+	height:auto;
+}
+#thank-you div.content-container {
+	height: auto!important;
+}
+
+  #blog content-container {
+    float: left;
+  }
+  
+  div.content-main ul {
+    margin: 15px 0 15px 15px;
+  }
+  
+  div.content-main ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+    padding-left: 15px;
+  }
+
+div.banner-container {
+  position: relative;
+  width: 100%;
+  height: 78px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+/* TRANSLATION STYLING
+ * Styling for translation copy
+ * ---------------------------------------------------------------------- */
+ 
+div.translation {
+  display: none;
+}
+
+div.translation.current {
+  display: block;
+}
+
+  div#home_ru p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  ul.slider-content div.translation.ru h3 {
+    font-family: Arial, Helvetica, san-serif;
+    font-weight: bold;
+    font-size: 12px;    
+    line-height: 12.5px;
+    margin-bottom: 5px;
+  }
+  
+  ul.slider-content div.translation.current.ru {
+    line-height: 12.5px;
+  }
+  
+form#search div.translation.ru p {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+
+
+
+/* HEADER STYLING
+ * Styling for the header area of the site
+ * ---------------------------------------------------------------------- */
+
+div.header-content {
+  width: 1174px;
+  margin: 0 auto;
+  padding: 9px;
+  background: transparent;
+}
+
+div.logo-content {
+  float: left;
+}
+
+
+
+
+/* FOOTER STYLING
+ * Styling for the footer area of the site
+ * ---------------------------------------------------------------------- */
+
+
+
+
+/* NAVIGATION STYLING
+ * Styling for navigation
+ * ---------------------------------------------------------------------- */
+
+  /* NAVIGATION STYLING: PRIMARY
+   * Styling for primary navigation
+   * ---------------------------------------------------------------------- */
+
+  .nav-primary {
+    float: left;
+    margin: 9px 0 0 27px;
+  }
+  
+    .nav-primary ul {
+      float: left;
+    }
+    
+      .nav-primary ul li {
+        display: inline;
+        float: left;
+        border-left: 1px solid #fff;
+        padding: 0 10px;
+      }
+      
+        .nav-primary ul li:first-child {
+          border-left: none;
+          padding-left: 0;       
+        }
+    
+          .nav-primary ul li a {
+            text-decoration: none;
+          }
+          
+          .nav-primary ul li a:hover {
+            color: #F63818;
+          }
+    
+      .nav-primary ul li.current_page_item a {
+        color: #F63818;
+      }  
+      
+      .nav-primary ul li#en:hover,
+      .nav-primary ul li#ru:hover,
+      .nav-primary ul li#ko:hover,
+      .nav-primary ul li#zh:hover {
+        cursor: pointer;
+      }
+      
+ 
+ 
+  /* NAVIGATION STYLING: LOGOS
+   * Styling for top navigation logos
+   * ---------------------------------------------------------------------- */
+
+  .nav-primary.logos {
+    margin-left: 0;
+  }
+
+    .nav-primary.logos ul li:first-child {
+      border-style: none none none double;
+      border-width: 3px;
+      padding-left: 10px;
+    }
+  
+    .nav-primary.logos ul li.logo {
+      height: 12px;
+    }
+    
+    .nav-primary.logos ul li.logo img {
+      margin-top: -3px;
+    }
+  
+  
+  /* NAVIGATION STYLING: SIDEBAR
+   * Styling for sidebar navigation
+   * ---------------------------------------------------------------------- */
+
+  .nav-sidebar {
+    float: left;
+    width: 116px;
+    margin-right: 62px;
+  }
+  
+    .nav-sidebar ul {
+    }
+
+      .nav-sidebar ul li {
+        margin-bottom: 4px;
+      }
+      
+        .nav-sidebar ul li a {
+          display: block;
+          text-decoration: none;
+        }
+        
+        .nav-sidebar ul li a div {
+          padding: 3px;
+          background: url('images/bg_opaque.png');
+        }
+  
+          .nav-sidebar ul li a:hover {
+            color: #F63818;
+            text-decoration: none;
+          }
+  
+        #home .nav-sidebar ul li a.home,
+        #residences .nav-sidebar ul li a.residences,
+        #floor-plans .nav-sidebar ul li a.floor-plans,
+        #building .nav-sidebar ul li a.building,
+        #stories .nav-sidebar ul li a.stories,
+        #neighborhood .nav-sidebar ul li a.neighborhood,
+        #gallery .nav-sidebar ul li a.gallery {
+          color: #f63818;
+        }
+
+
+  /* NAVIGATION STYLING: SOCIAL MEDIA
+   * Styling for social media links
+   * ---------------------------------------------------------------------- */
+   
+  .nav-social-media {
+    position: fixed;
+    bottom: 0;
+  }    
+  
+  body#panels .nav-social-media {
+    position: absolute;
+  }
+  
+    .nav-social-media ul {
+    }
+  
+      .nav-social-media ul li:first-child {
+        padding-top: 7px;
+        height: 146px;
+      }
+      
+      .nav-social-media ul li {
+        float: left;
+        height: 26px;
+        padding: 20px 6px 6px 6px;
+        background: url('images/bg_opaque.png');
+      }
+
+
+ 
+  /* NAVIGATION STYLING: BUTTONS
+   * Styling for navigation buttons
+   * ---------------------------------------------------------------------- */
+   
+  a.nav-button {
+    display: block;
+    width: 57px;
+    height: 51px;
+  }
+  
+    a.nav-button.next {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      opacity: .5;
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	    filter: alpha(opacity=50);      
+	    z-index: 150;
+	    background: #0e0e0e url('images/btn_down.png') no-repeat center center;
+    }
+    
+    a.nav-button.next:hover {
+      background: #0e0e0e url('images/btn_down-over.png') no-repeat center center;
+    }
+
+    a.nav-button.prev {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: .5;
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	    filter: alpha(opacity=50);      
+      z-index: 150;
+	    background: #0e0e0e url('images/btn_up.png') no-repeat center center;
+	  }
+	  
+    a.nav-button.prev:hover {
+      background: #0e0e0e url('images/btn_up-over.png') no-repeat center center;
+    }
+
+
+  /* NAVIGATION STYLING: CONTENT SLIDER BOX NAVIGATION
+   * Styling for navigation buttons inside slider content boxes
+   * ---------------------------------------------------------------------- */
+
+  ol.controls {
+    display: block;
+    position: absolute;
+    left: 16px;
+    bottom: 16px;  
+    width: 200px;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+  }
+  
+    ol.controls li {
+      float: left;
+    }
+  
+    ol.controls li a {
+      display: block;
+      width: 6px;
+      height: 6px;
+      margin-right: 6px;
+      background-color: #fff;
+    }
+    
+    ol.controls li.current a {
+      background-color: #f63816;
+    }
+
+
+ 
+
+/* COMMON ELEMENT STYLING
+ * Styling for common elements (column, etc)
+ * ---------------------------------------------------------------------- */
+
+.opaque {
+  background: url('images/bg_opaque.png');
+}  
+
+
+
+
+/* CONTENT STYLING
+ * Styling for content sections
+ * ---------------------------------------------------------------------- */
+
+div.panel-content {
+  padding: 0 9px;
+}
+
+div.content-slider {
+  position: relative;
+  width: 734px;
+  height: 347px;
+  padding: 16px;
+}
+
+div.content-main {
+  position: relative;
+  padding: 24px;
+  width: auto;
+  height: auto;  
+}
+
+
+  /* CONTENT STYLING: PAGE BANNER
+   * Styling for main page banner area
+   * ---------------------------------------------------------------------- */
+     
+  div.banner-content { 
+    position: absolute;
+    bottom: 3px;
+  }
+
+
+  /* CONTENT STYLING: SLIDER BOX CONTENT
+   * Styling for sliding box content areas of residences, building, etc
+   * ---------------------------------------------------------------------- */
+     
+  div.slider {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+  }   
+     
+	  div.slider ul li {
+		  width: 735px;
+		  height: 347px;
+		  overflow: hidden; 
+		  margin-bottom: 0;
+		  padding-left: 0;
+	  }	
+	  
+	div#slider-floorplan {
+	  height: 360px;
+	  overflow: hidden;
+	}
+	
+	  div#slider-floorplan ul li {
+	    height: 360px;
+	  }
+	
+	div#slider-floorplan ul.slider-content {
+	  margin: 0;  
+	}
+
+  ul.slider-content { 
+    position: absolute;
+  }
+  
+    ul.slider-content div.left-column {
+      float: left;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 200px;
+      margin-right: 14px;
+      font-family: Arial, Helvetica, san-serif;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: normal;
+    }
+    
+      ul.slider-content div.left-column h3 {
+        font-family: "klavika-web-1","klavika-web-2",sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        margin-bottom: 25px;
+        margin-top: 0;
+      }
+    
+      ul.slider-content div.left-column p {
+      }
+    
+    ul.slider-content div.right-column {
+      float: right;
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 520px;
+    }
+    
+    div.content-slider span.nav-prev a,
+    div.content-main span.nav-prev a {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 231px;
+      width: 32px;
+      height: 36px;
+	    z-index: 100;
+	    background: #ffee00 url('images/btn_prev.png') no-repeat center center;
+    }
+    
+    #stories div.content-slider span.nav-prev a {
+      left: 396px;
+    }
+    
+    #floor-plans span.nav-prev a {
+      left: 0;
+    }
+    
+    div.content-slider span.nav-next a,
+    div.content-main span.nav-next a {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 32px;
+      height: 36px;
+	    z-index: 100;
+	    background: #ffee00 url('images/btn_next.png') no-repeat center center;
+    }
+  
+        
+  /* CONTENT STYLING: STORIES CONTENT
+   * Styling for sliding box content areas of stories panel
+   * ---------------------------------------------------------------------- */
+
+  #stories #slider-stories div.left-column {
+    width: 345px;  
+    height: 100%;
+  }     
+  
+    #stories #slider-stories div.left-column div.translation.ru blockquote,
+    #stories #slider-stories div.left-column div.translation.ko blockquote {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  
+    #stories #slider-stories div.left-column div.header div.title {
+      font-family: "klavika-web-1","klavika-web-2",sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+    }
+  
+    #stories #slider-stories div.left-column blockquote {
+      font-family: "klavika-web-1","klavika-web-2",sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      padding-top: 10px;
+    }
+    
+    #stories #slider-stories div.left-column blockquote:before {
+      content:"\201C";
+    }
+
+    #stories #slider-stories div.left-column blockquote:after {
+      content:"\201D";
+    }
+    
+    #stories #slider-stories div.left-column a {
+      display: block;
+      position: absolute;
+      bottom: 60px;
+    }
+    
+  #stories #slider-stories div.right-column {
+    width: 355px;
+    margin-top: 25px;
+  }
+  
+  #stories ol.controls {
+    width: 345px;
+  }
+
+
+  /* CONTENT STYLING: HOME PAGE
+   * Styling for the home page
+   * ---------------------------------------------------------------------- */
+     
+  #home div.content-container {
+    width: 352px;
+    height: auto;
+  }
+  
+  div#panels img.activeslide {
+    display: none;
+  }
+
+
+  /* CONTENT STYLING: TOP NAV PAGES
+   * Styling for the content box on top nav pages
+   * ---------------------------------------------------------------------- */
+     
+  #brokers div.content-container,
+  #contact-us div.content-container,
+  #blog div.content-container,
+  #press div.content-container,
+  #news div.content-container,
+  #downloads div.content-container {
+    width: 432px;
+    height: auto;
+  }
+
+
+  /* CONTENT STYLING: FLOOR PLAN FINDER
+   * Styling for the floor plan finder
+   * ---------------------------------------------------------------------- */
+     
+  #floor-plans div.content-main {
+    padding: 12px;
+  }   
+     
+  #floor-plans div.filter-container {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #fff;
+  }
+  
+    #floor-plans div.filter-container div.instructions {
+      float: left;
+      width: 32%;
+      border-right: 1px solid #fff;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+    
+    #floor-plans div.filter-container div.filters {
+      float: left;
+      width: 65%;
+    }
+    
+  #floor-plans div.bottom-pane {
+    height: 271px;
+    overflow: hidden;
+  }
+
+    #floor-plans div.tower-indicators {
+      position: absolute;
+      top: 34px;
+      left: 48px;
+    }
+  
+      #floor-plans div.tower-indicators p { 
+        float: left;
+        font-size: 10px;
+      }
+
+        #floor-plans div.tower-indicators p:first-child { 
+          margin-right: 70px;
+        }
+
+    #floor-plans div.tower-container {
+      position: relative;
+      float: left;
+      margin-left: 20px;
+    }    
+    
+      #floor-plans div.tower-container div.tower-drag-container {
+        position: absolute;
+        top: 20px;
+        height: 235px;
+      }
+
+      #floor-plans div.tower-container div.tower {
+        width: 172px;
+        height: 271px;
+        background: url('images/bt_Floors.png') no-repeat;
+        pointer-events: none;
+      }
+    
+    #floor-plans div.tower-container div.floor {
+      position: absolute;
+      background: #79caee;
+      opacity: .7;
+    }
+    
+    #floor-plans div.tower-container div.floor:hover {
+      cursor: pointer;
+    }
+
+    #floor-plans div.tower-container div.north-tower-floors div.floor {
+      left: 12px;
+      width: 58px;
+      height: 5.5px;
+    }
+    
+    #floor-plans div.tower-container div#north-tower-selector {
+      position: absolute;
+      left: 12px;
+      width: 58px;
+      height: 11.5px;
+      margin-top: -3px;
+      background: url('images/bg_tower-selector.png') repeat-x center center;
+      z-index: 100;
+    }
+
+    #floor-plans div.tower-container div#north-tower-selector:hover {
+      cursor: pointer;
+    }
+    
+    #floor-plans div.tower-container div.south-tower-floors div.floor {
+      right: 20px;
+      width: 63px;
+      height: 5.5px;
+    }
+    
+    #floor-plans div.tower-container div#south-tower-selector {
+      position: absolute;
+      right: 20px;
+      width: 63px;
+      height: 11.5px;
+      margin-top: -3px;
+      background: url('images/bg_tower-selector.png') repeat-x center center;
+      z-index: 100;
+    }
+
+    #floor-plans div.tower-container div#south-tower-selector:hover {
+      cursor: pointer;
+    }
+
+    #floor-plans div.results-container {
+      float: left;
+      width: 63%;
+      margin-left: 54px;
+    }
+    
+  #floor-plans div.content-main span.nav-prev a,
+  #floor-plans div.content-main span.nav-next a {
+    top: 75%;
+  }
+  
+  #floor-plans div.content-main span.nav-next a {
+    display: none;
+  }
+  
+  #floor-plans form {
+    width: 100%;
+  }    
+      
+    #floor-plans form select,
+    #floor-plans form input {
+      float: left;
+      font-size: 11px;
+    }
+    
+    #floor-plans form input[type='submit'] {
+      float: right;
+      margin-left: 5px;
+    }
+    
+    #floor-plans form p {
+      float: left;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin: 0 3px 0 6px;
+    }
+    
+    #floor-plans form p:first-child {
+      margin-left: 0;
+    }
+  
+  #floor-plans div.results div.translation {
+    border-bottom: 1px solid #fff;
+  }
+  
+  #floor-plans div.results p.other-results {
+    margin-top: 10px;
+  }
+  
+  #floor-plans div.results div.result {
+    height: 23.5px;
+    display: none;
+  }
+
+  #floor-plans div.results div.result:hover {
+    cursor: pointer;
+  }
+
+  #floor-plans div.results div.result:hover span,
+  #floor-plans div.results div.result.active span {
+    color: #ffff00;
+  }
+  
+  #floor-plans div.results div.result span {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    border-left: 1px solid #fff;
+    padding-left: 8px;
+    margin-left: 8px;
+  }
+  
+  #floor-plans div.results div.result span#plan {
+    display: none;
+  }
+
+  #floor-plans div.results div.result span:first-child {
+    font-size: 12px;
+    font-weight: bold;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  #floor-plans div.footer {
+    position: relative;
+    border-top: 1px solid #fff;  
+    padding-top: 10px;
+    text-align: right;
+  }
+  
+    #floor-plans div.footer div.legend {
+      float: left;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      margin-left: 38px;
+    }
+    
+      #floor-plans div.footer div.legend div.available {
+        float: left;
+        height: 18px;
+        padding-left: 12px;
+        background: url('images/icon_available-floor.gif') no-repeat 0 9px;
+      }
+  
+      #floor-plans div.footer div.legend div.selected {
+        float: left;
+        height: 18px;
+        margin-left: 20px;
+        padding-left: 12px;
+        background: url('images/icon_active-floor.gif') no-repeat 0 9px;
+      }
+      
+    #floor-plans div.footer div.unit-jump { 
+      float: left;
+      position: absolute;
+      left: 244.8px;
+      padding-left: 10px;
+      border-left: 1px solid #fff;
+    }
+
+      #floor-plans div.footer div.unit-jump form label { 
+        float: left;
+        margin-right: 2px;
+      }
+      
+        #floor-plans div.footer div.unit-jump form label div.translation {
+          font-size: 11px;
+          text-transform: uppercase;
+        }
+      
+      #floor-plans div.footer div.unit-jump form input { 
+        float: left;
+        width: 50px;
+      }
+      
+      #floor-plans div.footer div.unit-jump form input[type='submit'] { 
+        width: auto;
+      }
+
+      #floor-plans div.footer div.unit-jump form div.translation {
+        float: left;
+      }
+      
+    a.call-to-action {
+      float: right;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffff00;
+      margin-left: 25px;
+    }
+    
+    a.call-to-action.modal {
+      margin: 10px 10px 0 0;
+    }
+  
+  #floor-plans div.unit-details-title {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;  
+  }
+ 
+    #floor-plans div.unit-details-title span {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      border-left: 1px solid #fff;
+      padding-left: 6px;
+      margin-left: 6px;
+    }
+       
+    #floor-plans div.unit-details-title span:first-child {
+      font-size: 13px;
+      font-weight: bold;
+      border-left: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    #floor-plans div.unit-details-title span#plan {
+      display: none;
+    }
+    
+    #floor-plans div.unit-details-plan {
+      padding: 20px 0;
+      text-align: center;
+    }
+    
+    #floor-plans div.unit-details-plan:hover {
+      cursor: pointer;
+    }
+
+  
+  
+  
+  /* CONTENT STYLING: GALLERY
+   * Styling for the gallery pages
+   * ---------------------------------------------------------------------- */
+  
+  #gallery div.banner-container,
+  #gallery div.nav-sidebar {
+    position: relative;
+    z-index: 100;
+  }
+  
+  #gallery div.nav-social-media {
+    z-index: 100;
+  }
+   
+	div#slider-gallery {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	}
+	
+	  div#slider-gallery ul li {
+	    
+	  }
+	  
+	#gallery span.nav-prev a {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 51px;
+    height: 60px;
+    z-index: 100;
+    background: #ffee00 url('images/btn_gallery-prev.png') no-repeat center center;
+  }
+
+	#gallery span.nav-next a {
+    display: block;
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: 51px;
+    height: 60px;
+    z-index: 100;
+    background: #ffee00 url('images/btn_gallery-next.png') no-repeat center center;
+  }
+  
+  #gallery ol.controls {
+    left: 100%;
+    margin-left: -216px;
+  }
+	  
+
+  /* CONTENT STYLING: BLOG
+   * Styling for blog pages
+   * ---------------------------------------------------------------------- */
+   
+  #blog div.content-main h3 {
+    margin-bottom: 30px;
+  } 
+   
+  #blog div.content-main h3:first-child {
+    margin-top: 0;
+  }  
+ 
+  #blog div.content-main img {
+    max-width: 384px;
+    height: auto;
+  }
+     
+
+/* SIDEBAR STYLING
+ * Styling for sidebar area
+ * ---------------------------------------------------------------------- */
+
+div.content-sidebar {
+	float: left;
+	width: 150px;
+	margin-left: 15px;
+	padding: 24px;
+}
+
+div.content-sidebar h4 {
+  margin: 20px 0 0 0;
+}
+
+div.content-sidebar h4:first-child {
+  margin-top: 0;
+}
+
+div.content-sidebar li a {
+  text-decoration: none;
+}
+
+/*New custom styles*/
+#IDX-resultsSavePropertyText, .IDX-unsavedProperty { display: none !important: }

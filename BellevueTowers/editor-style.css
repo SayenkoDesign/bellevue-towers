@@ -1,0 +1,115 @@
+/*
+Theme Name: Bellevue Towers
+*/
+/*
+Used to style the TinyMCE editor.
+*/
+
+/* =HEADERS */
+
+
+/* =FLOAT CLEARING */
+.group:after,
+.container:after { 
+	content: ".";  
+ 	display: block; 
+ 	height: 0; 
+ 	clear: both; 
+ 	visibility: hidden; 
+}
+
+.group,
+.container {
+	display: inline-block;
+}
+
+/* Hides from IE-mac */
+* html .group,
+* html .container {
+	height: 1%;
+}
+
+.group,
+.container {
+	display: block;
+}
+/* End hide from IE-mac */
+
+.alignright {
+  position: absolute;
+  right: 0;
+  clear: right;
+  margin-top: -12px;
+  margin-bottom: 15px;
+}
+
+p, ul, li {
+  font-family: "klavika-web-1","klavika-web-2",sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:link:hover {
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "klavika-web-1","klavika-web-2",sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+blockquote {
+  font-family: "klavika-web-1","klavika-web-2",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+blockquote p {
+  display: inline;
+  font-family: "klavika-web-1","klavika-web-2",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  padding-top: 10px;
+}
+
+blockquote:before {
+  display: inline;
+  content:"\201C";
+}
+
+blockquote:after {
+  display: inline;
+  content:"\201D";
+}
+
