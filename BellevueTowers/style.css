@@ -303,14 +303,14 @@ div.panel {
 }
 
 div.panel-container {
-  width: 1192px;
+  width:90%;
+  max-width: 1192px;
   margin: 0 auto;
 }
 
 div.content-container {
   float: left;
-  width: 766px;
-  height: 379px;
+  height: auto;
 }
 body[id="lanai"] .content-container{
 	height:auto;
@@ -486,8 +486,8 @@ div.logo-content {
 
   .nav-sidebar {
     float: left;
-    width: 116px;
-    margin-right: 62px;
+    width: 15%;
+	margin-right:5%
   }
   
     .nav-sidebar ul {
@@ -655,7 +655,7 @@ div.content-slider {
 
 div.content-main {
   position: relative;
-  padding: 24px;
+  padding: 12px 27px 12px 12px;
   width: auto;
   height: auto;  
 }
@@ -690,7 +690,7 @@ div.content-main {
 	  }	
 	  
 	div#slider-floorplan {
-	  height: 360px;
+	  /*height: 360px; removed MC - 2016.05.03*/
 	  overflow: hidden;
 	}
 	
@@ -863,7 +863,7 @@ div.content-main {
    * ---------------------------------------------------------------------- */
      
   #floor-plans div.content-main {
-    padding: 12px;
+    padding: 12px 27px 12px 12px;
   }   
      
   #floor-plans div.filter-container {
@@ -1260,5 +1260,49 @@ div.content-sidebar li a {
   text-decoration: none;
 }
 
-/*New custom styles*/
-#IDX-resultsSavePropertyText, .IDX-unsavedProperty { display: none !important: }
+/******New custom styles******/
+.panel-container{
+	width:90%;
+	max-width:1192px;
+}
+.panel-container .content-container{width:80%;}
+#slider-floorplan{height: 640px;}
+#slider-floorplan iframe{
+	width: 98%; 
+	height: 600px; 
+	margin: 15px; 
+	border:none;
+}
+
+/*Mobile Friendly Styles*/
+@media screen and (max-width:50em){
+  .nav-sidebar {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+    .nav-sidebar .translation{
+      padding:.5em;
+    }
+  .panel-container .content-container{
+    width:100%;
+  }
+
+  /*NWG logo*/
+  .nav-social-media {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    left: auto !important;
+  }
+    .nav-social-media ul li:first-child {
+      padding-top: 7px;
+      height: 50px;
+    }
+    .nav-social-media li > img{
+      width:50px;
+      height:50px;
+    }
+}
+

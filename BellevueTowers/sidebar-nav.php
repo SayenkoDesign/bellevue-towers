@@ -9,7 +9,7 @@
 ?>
 
   <div class="nav-sidebar">
-    <ul>
+    <ul class="responsive-nav">
       <li><a href="http://bellevuetowers.com/#home" class="scroll home" title="Home" target="_blank">
         <div class="translation en current">
           <?php echo $en['home']; ?>
