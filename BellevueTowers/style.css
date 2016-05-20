@@ -1285,8 +1285,8 @@ div.content-sidebar li a {
     .nav-sidebar .translation{
       padding:.5em;
     }
-  .panel-container .content-container{
-    width:100%;
+  div.panel-container, .panel-container, .content-container{
+    width:100% !important;
   }
 
   /*NWG logo*/
@@ -1304,5 +1304,10 @@ div.content-sidebar li a {
       width:50px;
       height:50px;
     }
+}
+@media screen and (max-width:35em){
+  .nav-social-media{
+    display:none;
+  }
 }
 
