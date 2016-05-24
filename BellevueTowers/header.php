@@ -10,9 +10,6 @@
 		
 		<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/shadowbox/shadowbox.css" type="text/css" media="screen" />
 		
     <!--[if lte IE 6]><link rel="stylesheet" href="http://universal-ie6-css.googlecode.com /files/ie6.0.3.css" media="screen, projection"> <![endif]-->
     <!--[if gte IE 6]>
