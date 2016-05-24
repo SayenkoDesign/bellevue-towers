@@ -434,6 +434,19 @@ function towers_custom_excerpt_more( $output ) {
 add_filter( 'get_the_excerpt', 'towers_custom_excerpt_more' );
 
 
+/**
+ * Enqueue scripts and styles.
+ */
+function bt_scripts() {
+  /* Add Foundation*/
+  wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css' );
+  /* Foundation JS */
+  wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), '1', true );
+  wp_enqueue_script( 'foundation-js-app', get_template_directory_uri() . '/foundation/js/app.js', array( 'jquery' ), '1', true );
+  /* Foundation Init JS */
+  wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/foundation/js/foundation.js', array( 'jquery' ), '1', true );
+}
+add_action( 'wp_enqueue_scripts', 'bt_scripts' );
 
 
 /**
