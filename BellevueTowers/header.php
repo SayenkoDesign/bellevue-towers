@@ -1,8 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?php /** * The Header for our theme.  */ ?>
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" <?php language_attributes(); ?>>
-  <head>
+ <head>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />  	
     <!-- <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title> -->
@@ -107,7 +105,6 @@
 	<?php wp_head(); ?>
 		
 	</head>
-	MAIN TEMPLATE
 	<?php 
 		global $ancestor_slug;
 	  $ancestor_slug = get_top_ancestor_slug( $post ); 
