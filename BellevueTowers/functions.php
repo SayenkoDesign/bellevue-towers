@@ -441,10 +441,10 @@ function bt_scripts() {
   /* Add Foundation*/
   wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css' );
   /* Foundation JS */
-  wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), '1', true );
+  wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/vendor/foundation.min.js', array( 'jquery' ), '1', true );
   wp_enqueue_script( 'foundation-js-app', get_template_directory_uri() . '/foundation/js/app.js', array( 'jquery' ), '1', true );
   /* Foundation Init JS */
-  wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/foundation/js/foundation.js', array( 'jquery' ), '1', true );
+  wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/foundation/js/vendor/foundation.js', array( 'jquery' ), '1', true );
 
 
   wp_enqueue_style( 'bt-styles', get_stylesheet_directory_uri() . '/style.css' );
