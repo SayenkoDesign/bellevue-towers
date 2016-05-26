@@ -19,13 +19,16 @@
 		      <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="Bellevue Towers" title="Bellevue Towers" /></a>
 		    </div>
 		    <div class="nav-primary group">
-		      <?php towers_build_header_nav($post, $ancestor_slug, $en, $ru, $zh, $ko); ?>
+		      <ul>
+		      	<li><a href="http://www.bellevuetowers.com/virtual-tour" title="Virtual Tour">
+		      	<div class='translation en current'>Virtual Tour</div></a></li>
+		      	<li><a href="http://www.bellevuetowers.com/brokers" title="Brokers">
+		      	<div class='translation en current'>brokers</div></a></li>
+		      	<li><a href="http://www.bellevuetowers.com/news" title="News">
+		      	<div class='translation en current'>news</div></a></li>
+		      	<li><a href="http://www.bellevuetowers.com/contact-us" title="Contact Us">
+		      	<div class='translation en current'>contact us</div></a></li>
+		      </ul>
 		    </div>
-    	  <!--<div class="nav-primary logos group">
-    	    <ul>
-    	      <li><a href="http://www.realtytrustcity.com/" target="_blank">Realty Trust City</a></li>
-    	      <li class="logo"><a href="http://portal.hud.gov/hudportal/HUD?src=/program_offices/fair_housing_equal_opp" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/logo_fair-housing.png" alt="" title="" width="18" height="15" /></a></li>
-    	    </ul>
-    	  </div> -->
     	</div>
   	</div>
