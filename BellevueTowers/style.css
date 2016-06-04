@@ -1275,6 +1275,17 @@ div.content-sidebar li a {
 }
 
 /*Mobile Friendly Styles*/
+.title-bar{background:#fff;}
+  .menu-icon::after { /*hamburger styles*/
+    background: #282b30;
+    box-shadow: 0 7px 0 #282b30, 0 14px 0 #282b30;
+}
+.top-bar, .top-bar ul {
+    background-color: #282b30;
+    text-transform:uppercase;
+    text-align: center;
+}
+  .top-bar ul a{text-decoration: none;}
 @media screen and (max-width:50em){
   .nav-sidebar {
     float: none;

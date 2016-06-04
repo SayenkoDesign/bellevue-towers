@@ -438,6 +438,10 @@ add_filter( 'get_the_excerpt', 'towers_custom_excerpt_more' );
  * Enqueue scripts and styles.
  */
 function bt_scripts() {
+
+  /*Font Awesome*/
+  wp_enqueue_style( 'warock-font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array(), null);
+  
   /* Add Foundation*/
   wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css' );
   /* Foundation JS */
