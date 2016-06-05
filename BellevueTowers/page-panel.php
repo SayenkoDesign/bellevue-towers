@@ -60,8 +60,8 @@ get_header();
           		<div class="content-main opaque">
 
   		          <div id="slider-floorplan" class="slider">
-<div style="  position: fixed; right:2%;   bottom: 0;  left: 2%;  top: 0;  -webkit-overflow-scrolling: touch; overflow-y: scroll;">
-                  <iframe src="http://bellevuetowers.idxbroker.com/idx/results/listings?start=1&amp;idxID=a045&amp;a_streetNumber%5B%5D=500&amp;a_streetNumber%5B%5D=10700&amp;aw_streetName%5B%5D=106th&amp;aw_streetName%5B%5D=4th&amp;per=25" style="border:none; height:100%; width:92%;" allowTransparency="true" scrolling="auto" frameBorder="0"></iframe>
+<div class="idx-list">
+                  <iframe src="http://bellevuetowers.idxbroker.com/idx/results/listings?start=1&amp;idxID=a045&amp;a_streetNumber%5B%5D=500&amp;a_streetNumber%5B%5D=10700&amp;aw_streetName%5B%5D=106th&amp;aw_streetName%5B%5D=4th&amp;per=25" style="border:none; height:100%; min-height:600px; width:92%;" allowTransparency="true" scrolling="auto" frameBorder="0"></iframe>
 </div>
 
             		</div><!-- slider-floorplan -->
