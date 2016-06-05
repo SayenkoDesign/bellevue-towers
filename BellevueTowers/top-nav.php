@@ -31,17 +31,17 @@
 			<div class="title-bar" data-responsive-toggle="mobile-menu" data-hide-for="medium">
 
 			  <div class="row">
-			  	  <div class="column small-4">
-			        <div class="mobile-phone">
-				      <a href="tel:425-890-9909"><i class="fa fa-phone" aria-hidden="true"></i></a>
-				    </div>
-				  </div>
-				  <div class="column small-4">
+				  <div class="column small-6">
 			        <div class="logo-content">
 				      <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="Bellevue Towers" title="Bellevue Towers" /></a>
 				    </div>
 				  </div>
-				  <div class="column small-4">
+			  	  <div class="column small-3">
+			        <div class="mobile-phone">
+				      <a href="tel:425-890-9909"><i class="fa fa-phone" aria-hidden="true"></i></a>
+				    </div>
+				  </div>
+				  <div class="column small-3">
 			  		<button class="menu-icon" type="button" data-toggle></button>
 			      </div>
 			    </div><!-- row -->

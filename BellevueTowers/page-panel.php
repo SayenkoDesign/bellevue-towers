@@ -26,12 +26,12 @@ get_header();
 
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-      <div id="<?php echo $post->post_name; ?>" class="panel loading group active">
+      <div id="floor-plans" class="panel loading group active" style="background:#282b30;">
 
         <div class="panel-container group">
           <div class="panel-content">
 
-            <div class="banner-container">
+            <div class="banner-container show-for-medium">
               <div class="banner-content">
           	    <h1>
                   <?php
@@ -59,9 +59,10 @@ get_header();
 
           		<div class="content-main opaque">
 
-  		          <div id="slider-floorplan" class="slider" style="height: 640px;">
-
-                  <iframe src="http://bellevuetowers.idxbroker.com/idx/results/listings?start=1&amp;idxID=a045&amp;a_streetNumber%5B%5D=500&amp;a_streetNumber%5B%5D=10700&amp;aw_streetName%5B%5D=106th&amp;aw_streetName%5B%5D=4th&amp;per=25" style="border:none;" allowTransparency="true" frameBorder="0"></iframe>
+  		          <div id="slider-floorplan" class="slider">
+<div style="  position: fixed; right:2%;   bottom: 0;  left: 2%;  top: 0;  -webkit-overflow-scrolling: touch; overflow-y: scroll;">
+                  <iframe src="http://bellevuetowers.idxbroker.com/idx/results/listings?start=1&amp;idxID=a045&amp;a_streetNumber%5B%5D=500&amp;a_streetNumber%5B%5D=10700&amp;aw_streetName%5B%5D=106th&amp;aw_streetName%5B%5D=4th&amp;per=25" style="border:none; height:100%; width:92%;" allowTransparency="true" scrolling="auto" frameBorder="0"></iframe>
+</div>
 
             		</div><!-- slider-floorplan -->
 

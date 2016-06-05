@@ -864,7 +864,13 @@ div.content-main {
      
   #floor-plans div.content-main {
     padding: 12px 27px 12px 12px;
-  }   
+  } 
+  @media screen and (max-width:50em){
+    #floor-plans div.content-main{
+        padding: 7px 15px 7px 2px;
+    }
+  }
+
      
   #floor-plans div.filter-container {
     padding-bottom: 10px;
@@ -1276,10 +1282,27 @@ div.content-sidebar li a {
 
 /*Mobile Friendly Styles*/
 .title-bar{background:#fff;}
+  .menu-icon{
+    width:40px;
+    height:32px;
+    margin-top:3px;
+  }
   .menu-icon::after { /*hamburger styles*/
     background: #282b30;
-    box-shadow: 0 7px 0 #282b30, 0 14px 0 #282b30;
+    box-shadow: 0 12px 0 #282b30, 0 24px 0 #282b30;
+    height:5px;
 }
+  .menu-icon:hover::after{
+    background:#777;
+    box-shadow: 0 12px 0 #777, 0 24px 0 #777;
+
+  }
+  .fa-phone{
+    font-size:3em;
+    color:#282b30;
+  }
+    .fa-phone:hover{color:#777;}
+  .logo-content{padding-top:5px;}
 .top-bar, .top-bar ul {
     background-color: #282b30;
     text-transform:uppercase;
@@ -1296,8 +1319,11 @@ div.content-sidebar li a {
     .nav-sidebar .translation{
       padding:.5em;
     }
+
+  
   div.panel-container, .panel-container, .content-container{
-    width:100% !important;
+    width: 102.6% !important;
+    margin-left: -1.2%;
   }
 
   /*NWG logo*/
@@ -1322,3 +1348,11 @@ div.content-sidebar li a {
   }
 }
 
+/*IDX overwrite added to https://middleware.idxbroker.com/mgmt/customcss.php*/
+/*
+#IDX-mobile-listings{padding-top:76px !important;}
+.ui-grid-a{display: none !important;}
+.ui-header-fixed{top:35px;}
+.IDX-resultsAddressUnitNumber{display:block;}
+.IDX-resultsEndAddressCommaOne{display:none;}
+*/
