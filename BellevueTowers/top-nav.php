@@ -38,7 +38,7 @@
 				  </div>
 			  	  <div class="column small-3">
 			        <div class="mobile-phone">
-				      <a href="tel:425-890-9909"><i class="fa fa-phone" aria-hidden="true"></i></a>
+				      <a href="tel:<?php the_field('phone'); ?>"><i class="fa fa-phone" aria-hidden="true"></i></a>
 				    </div>
 				  </div>
 				  <div class="column small-3">
@@ -49,15 +49,14 @@
 
 			<div class="top-bar" id="mobile-menu">
 			    <ul class="vertical menu" data-accordion-menu data-disable-hover="true" data-click-open="true" data-force-follow="true">
-			      	<li><a href="http://www.bellevuetowers.com/#home" title="Home">Home</a></li>
-			      	<li><a href="http://www.bellevuetowers.com/contact-us" title="Contact Us">contact</a></li>
-			      	<li><a href="http://www.bellevuetowersavailability.com/" title="Availability">Availability</a></li>
-			      	<li><a href="http://www.bellevuetowers.com/brokers" title="Brokers">brokers</a></li>
-			      	<li><a href="http://www.bellevuetowers.com/#residence" title="Residence">Residence</a></li>
-			      	<li><a href="http://www.bellevuetowers.com/#building" title="Building">Building</a></li>
-			      	<li><a href="http://www.bellevuetowers.com/#neighborhood" title="Neighborhood">Neighborhood</a></li>
-			      	<li><a href="http://www.bellevuetowers.com/#stories" title="Stories">Stories</a></li>
-			      	<li><a href="http://www.bellevuetowers.com/virtual-tour" title="Virtual Tour">Virtual Tour</a></li>
+                <?php wp_nav_menu( array( 
+                'menu' => 'mobile-menu',
+                'container' => '',
+                'menu_class' => 'vertical menu', 
+                'container_id' => 'primary-mobile-navigation',
+                'items_wrap' => '%3$s',
+                'depth' => 2
+            ) ); ?>
 			    </ul>
 			</div>
 		</div>
