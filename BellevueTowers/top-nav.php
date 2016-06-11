@@ -14,7 +14,7 @@
 		?>
 
 	<div class="header-container">
-	    <div class="header-content group show-for-medium">
+	    <div class="header-content group show-for-large">
 	        <div class="logo-content">
 		      <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="Bellevue Towers" title="Bellevue Towers" /></a>
 		  	</div>
@@ -27,18 +27,18 @@
 		      </ul>
 		    </div>
     	</div>
-    	<div class="show-for-small-only">
-			<div class="title-bar" data-responsive-toggle="mobile-menu" data-hide-for="medium">
+    	<div class="hide-for-large">
+			<div class="title-bar" data-responsive-toggle="mobile-menu" data-hide-for="large">
 
 			  <div class="row">
-				  <div class="column small-6">
-			        <div class="logo-content">
-				      <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="Bellevue Towers" title="Bellevue Towers" /></a>
-				    </div>
-				  </div>
 			  	  <div class="column small-3">
 			        <div class="mobile-phone">
 				      <a href="tel:<?php the_field('phone'); ?>"><i class="fa fa-phone" aria-hidden="true"></i></a>
+				    </div>
+				  </div>
+				  <div class="column small-6">
+			        <div class="logo-content">
+				      <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.jpg" alt="Bellevue Towers" title="Bellevue Towers" /></a>
 				    </div>
 				  </div>
 				  <div class="column small-3">

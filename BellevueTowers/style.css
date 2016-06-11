@@ -393,7 +393,7 @@ div.header-content {
   background: transparent;
 }
 
-div.logo-content {
+.logo-content {
   float: left;
 }
 
@@ -865,7 +865,7 @@ div.content-main {
   #floor-plans div.content-main {
     padding: 12px 0px 12px 12px;
   } 
-  @media screen and (max-width:40em){
+  @media screen and (max-width:64.063em){
     #floor-plans div.content-main{
         padding: 7px 15px 7px 2px;
     }
@@ -1281,7 +1281,10 @@ div.content-sidebar li a {
 }
 
 /*Mobile Friendly Styles*/
-.title-bar{background:#fff;}
+.title-bar{
+  background:#fff;
+  text-align: center;
+}
   .menu-icon{
     width:40px;
     height:32px;
@@ -1309,7 +1312,8 @@ div.content-sidebar li a {
     text-align: center;
 }
   .top-bar ul a{text-decoration: none;}
-@media screen and (max-width:40em){
+@media screen and (max-width:64.063em){
+  .logo-content{float:none;}
   .nav-sidebar {
     float: none;
     width: 100%;
@@ -1341,19 +1345,21 @@ div.content-sidebar li a {
       width:50px;
       height:50px;
     }
+  #slider-floorplan{overflow-x: hidden;} /*get rid of scroll bar*/
   .idx-list{
     position: fixed; 
-    right:2%;   
+    right:-17px;   
     bottom: 0;  left: 2%;
     top: 0;  
     -webkit-overflow-scrolling: touch; 
     overflow-y: scroll;
   }
-}
-@media screen and (max-width:35em){
   .nav-social-media{
     display:none;
   }
+}
+@media screen and (max-width:40em){
+  .idx-list{right:2%;}
 }
 
 /*IDX overwrite added to https://middleware.idxbroker.com/mgmt/customcss.php*/

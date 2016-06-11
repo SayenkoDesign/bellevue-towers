@@ -8,7 +8,7 @@
  */
 ?>
 
-  <div class="nav-sidebar show-for-medium">
+  <div class="nav-sidebar show-for-large">
     <ul class="responsive-nav">
       <li><a href="http://bellevuetowers.com/#home" class="scroll home" title="Home" target="_blank">
         <div class="translation en current">
