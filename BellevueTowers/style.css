@@ -1325,7 +1325,7 @@ div.content-sidebar li a {
     }
 
   
-  div.panel-container, .panel-container, .content-container{
+  #panels div.panel-container, #panels .panel-container, #panels .content-container{
     width: 102.6% !important;
     margin-left: -1.2%;
   }
@@ -1362,11 +1362,29 @@ div.content-sidebar li a {
   .idx-list{right:2%;}
 }
 
-/*IDX overwrite added to https://middleware.idxbroker.com/mgmt/customcss.php*/
-/*
-#IDX-mobile-listings{padding-top:76px !important;}
-.ui-grid-a{display: none !important;}
-.ui-header-fixed{top:35px;}
-.IDX-resultsAddressUnitNumber{display:block;}
-.IDX-resultsEndAddressCommaOne{display:none;}
-*/
+/*Inside Pages*/
+@media screen and (max-width:64.063em){
+  .banner-container{margin-top:80px;} /*spacing for nav/title*/
+  body#brokers, body#contact-us{
+    background:rgba(20, 20, 20, 1); /*get rid of background image for mobile*/
+  }
+  #brokers #superbgimage, #contact-us #superbgimage{display: none !important;}
+  #brokers .panel-container, #contact-us .panel-container{
+    margin-left:0;
+    width:100%;
+  }
+  #brokers .content-main, #contact-us .content-main{
+    padding:2em;
+    width:100%;
+    font-size:1.2em;
+  }
+  #brokers h3, #contact-us h3{
+    font-size:1.5em;
+  }
+  #brokers div.content-container, #contact-us div.content-container{
+    width:100%;
+  }
+  #brokers div.banner-container, #contact-us div.banner-container{
+    margin-top:80px;
+  }
+}

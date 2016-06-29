@@ -61,7 +61,7 @@ get_header();
 
   		          <div id="slider-floorplan" class="slider">
 <div class="idx-list">
-                  <iframe src="http://bellevuetowers.idxbroker.com/idx/results/listings?start=1&amp;idxID=a045&amp;a_streetNumber%5B%5D=500&amp;a_streetNumber%5B%5D=10700&amp;aw_streetName%5B%5D=106th&amp;aw_streetName%5B%5D=4th&amp;per=25" style="border:none; height:100%; min-height:600px; width:calc(95% - 15px);" allowTransparency="true" scrolling="auto" frameBorder="0"></iframe>
+                  <iframe src="http://bellevuetowers.idxbroker.com/idx/results/listings?start=1&amp;idxID=a045&amp;a_streetNumber%5B%5D=500&amp;a_streetNumber%5B%5D=10700&amp;aw_streetName%5B%5D=106th&amp;aw_streetName%5B%5D=4th&amp;per=25" style="border:none; height:100%; min-height:675px; width:calc(95% - 15px);" allowTransparency="true" scrolling="auto" frameBorder="0"></iframe>
 </div>
 
             		</div><!-- slider-floorplan -->
