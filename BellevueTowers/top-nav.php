@@ -21,9 +21,9 @@
 		    <div class="nav-primary group">
 		      <ul>
 		      	<li><a href="http://www.bellevuetowers.com/virtual-tour" title="Virtual Tour">Virtual Tour</a></li>
-		      	<li><a href="http://www.bellevuetowers.com/brokers" title="Brokers">brokers</a></li>
+		      	<li><a href="http://bellevuetowersavailability.com/brokers" title="Brokers">brokers</a></li>
 		      	<li><a href="http://www.bellevuetowers.com/news" title="News">news</a></li>
-		      	<li><a href="http://www.bellevuetowers.com/contact-us" title="Contact Us">contact us</a></li>
+		      	<li><a href="http://bellevuetowersavailability.com/contact-us" title="Contact Us">contact us</a></li>
 		      </ul>
 		    </div>
     	</div>
