@@ -20,16 +20,14 @@
     <script type="text/javascript">
       var templateUrl = '<?= get_bloginfo("template_url"); ?>/';
     </script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
 	  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.cookie.js"></script>
 	  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.superbgimage.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/shadowbox/shadowbox.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/easySlider1.7.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/base.js"></script>
-		
-		<script type="text/javascript" src="http://use.typekit.com/zke8tif.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
