@@ -154,16 +154,19 @@ function towers_build_header_nav( $post, $ancestor_slug, $en, $ru, $zh, $ko ) {
 /**
  * Function to display captions assigned to feature images
  */
+if(!function_exists('the_post_thumbnail_caption'))
+{
+    function the_post_thumbnail_caption()
+    {
+        global $post;
 
-function the_post_thumbnail_caption() {
-  global $post;
+        $thumbnail_id = get_post_thumbnail_id($post->ID);
+        $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
 
-  $thumbnail_id    = get_post_thumbnail_id($post->ID);
-  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
-
-  if ($thumbnail_image && isset($thumbnail_image[0])) {
-    echo "<div class=\"image_caption\">" . $thumbnail_image[0]->post_excerpt . "</div>";
-  }
+        if ($thumbnail_image && isset($thumbnail_image[0])) {
+            echo "<div class=\"image_caption\">" . $thumbnail_image[0]->post_excerpt . "</div>";
+        }
+    }
 }
 
 
@@ -173,15 +176,18 @@ function the_post_thumbnail_caption() {
  * Function to return captions assigned to feature images
  */
 
-function get_the_post_thumbnail_caption() {
-  global $post;
+if(!function_exists('the_post_thumbnail_caption'))
+{
+    function get_the_post_thumbnail_caption() {
+      global $post;
 
-  $thumbnail_id    = get_post_thumbnail_id($post->ID);
-  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
+      $thumbnail_id    = get_post_thumbnail_id($post->ID);
+      $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
 
-  if ($thumbnail_image && isset($thumbnail_image[0])) {
-    return "<div class=\"image_caption\">" . $thumbnail_image[0]->post_excerpt . "</div>";
-  }
+      if ($thumbnail_image && isset($thumbnail_image[0])) {
+        return "<div class=\"image_caption\">" . $thumbnail_image[0]->post_excerpt . "</div>";
+      }
+    }
 }
 
 
