@@ -303,14 +303,14 @@ div.panel {
 }
 
 div.panel-container {
-  width:90%;
-  max-width: 1192px;
+  width: 1192px;
   margin: 0 auto;
 }
 
 div.content-container {
   float: left;
-  height: auto;
+  width: 766px;
+  height: 379px;
 }
 body[id="lanai"] .content-container{
 	height:auto;
@@ -393,7 +393,7 @@ div.header-content {
   background: transparent;
 }
 
-.logo-content {
+div.logo-content {
   float: left;
 }
 
@@ -486,8 +486,8 @@ div.header-content {
 
   .nav-sidebar {
     float: left;
-    width: 15%;
-	margin-right:5%
+    width: 116px;
+    margin-right: 62px;
   }
   
     .nav-sidebar ul {
@@ -539,10 +539,7 @@ div.header-content {
     .nav-social-media ul {
     }
   
-      .nav-social-media ul li:first-child {
-        padding-top: 7px;
-        height: 146px;
-      }
+     
       
       .nav-social-media ul li {
         float: left;
@@ -655,7 +652,7 @@ div.content-slider {
 
 div.content-main {
   position: relative;
-  padding: 12px 27px 12px 12px;
+  padding: 24px;
   width: auto;
   height: auto;  
 }
@@ -690,7 +687,7 @@ div.content-main {
 	  }	
 	  
 	div#slider-floorplan {
-	  /*height: 360px; removed MC - 2016.05.03*/
+	  height: 360px;
 	  overflow: hidden;
 	}
 	
@@ -863,14 +860,8 @@ div.content-main {
    * ---------------------------------------------------------------------- */
      
   #floor-plans div.content-main {
-    padding: 12px 0px 12px 12px;
-  } 
-  @media screen and (max-width:64.063em){
-    #floor-plans div.content-main{
-        padding: 7px 15px 7px 2px;
-    }
-  }
-
+    padding: 12px;
+  }   
      
   #floor-plans div.filter-container {
     padding-bottom: 10px;
@@ -1266,125 +1257,5 @@ div.content-sidebar li a {
   text-decoration: none;
 }
 
-/******New custom styles******/
-.panel-container{
-	width:90%;
-	max-width:1192px;
-}
-.panel-container .content-container{width:80%;}
-#slider-floorplan{height: 640em;}
-#slider-floorplan iframe{
-	width: 98%; 
-	height: 600px; 
-	margin: 15px; 
-	border:none;
-}
-
-/*Mobile Friendly Styles*/
-.title-bar{
-  background:#fff;
-  text-align: center;
-}
-  .menu-icon{
-    width:40px;
-    height:32px;
-    margin-top:3px;
-  }
-  .menu-icon::after { /*hamburger styles*/
-    background: #282b30;
-    box-shadow: 0 12px 0 #282b30, 0 24px 0 #282b30;
-    height:5px;
-}
-  .menu-icon:hover::after{
-    background:#777;
-    box-shadow: 0 12px 0 #777, 0 24px 0 #777;
-
-  }
-  .fa-phone{
-    font-size:3em;
-    color:#282b30;
-  }
-    .fa-phone:hover{color:#777;}
-  .logo-content{padding-top:5px;}
-.top-bar, .top-bar ul {
-    background-color: #282b30;
-    text-transform:uppercase;
-    text-align: center;
-}
-  .top-bar ul a{text-decoration: none;}
-@media screen and (max-width:64.063em){
-  .logo-content{float:none;}
-  .nav-sidebar {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    text-align: center;
-  }
-    .nav-sidebar .translation{
-      padding:.5em;
-    }
-
-  
-  #panels div.panel-container, #panels .panel-container, #panels .content-container{
-    width: 102.6% !important;
-    margin-left: -1.2%;
-  }
-
-  /*NWG logo*/
-  .nav-social-media {
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    left: auto !important;
-  }
-    .nav-social-media ul li:first-child {
-      padding-top: 7px;
-      height: 50px;
-    }
-    .nav-social-media li > img{
-      width:50px;
-      height:50px;
-    }
-  #slider-floorplan{overflow-x: hidden;} /*get rid of scroll bar*/
-  .idx-list{
-    position: fixed; 
-    right:-17px;   
-    bottom: 0;  left: 2%;
-    top: 0;  
-    -webkit-overflow-scrolling: touch; 
-    overflow-y: scroll;
-  }
-  .nav-social-media{
-    display:none;
-  }
-}
-@media screen and (max-width:40em){
-  .idx-list{right:2%;}
-}
-
-/*Inside Pages*/
-@media screen and (max-width:64.063em){
-  .banner-container{margin-top:80px;} /*spacing for nav/title*/
-  body#brokers, body#contact-us{
-    background:rgba(20, 20, 20, 1); /*get rid of background image for mobile*/
-  }
-  #brokers #superbgimage, #contact-us #superbgimage{display: none !important;}
-  #brokers .panel-container, #contact-us .panel-container{
-    margin-left:0;
-    width:100%;
-  }
-  #brokers .content-main, #contact-us .content-main{
-    padding:2em;
-    width:100%;
-    font-size:1.2em;
-  }
-  #brokers h3, #contact-us h3{
-    font-size:1.5em;
-  }
-  #brokers div.content-container, #contact-us div.content-container{
-    width:100%;
-  }
-  #brokers div.banner-container, #contact-us div.banner-container{
-    margin-top:80px;
-  }
-}
+/*New custom styles*/
+#IDX-resultsSavePropertyText, .IDX-unsavedProperty { display: none !important: }

@@ -8,9 +8,9 @@
  */
 ?>
 
-  <div class="nav-sidebar show-for-large">
-    <ul class="responsive-nav">
-      <li><a href="http://bellevuetowers.com/#home" class="scroll home" title="Home" target="_blank">
+  <div class="nav-sidebar">
+    <ul>
+      <li><a href="/#home" class="scroll home" title="Home">
         <div class="translation en current">
           <?php echo $en['home']; ?>
         </div>
@@ -24,7 +24,7 @@
           <?php echo $ko['home']; ?>
         </div>
       </a></li>
-      <li><a href="/#floor-plans" class="scroll floor-plans" title="Floor Plans">
+      <li><a href="http://bellevuetowersavailability.com//#floor-plans" class="scroll floor-plans" title="Floor Plans">
         <div class="translation en current">
           <?php echo $en['floor plans']; ?>
         </div>
@@ -38,7 +38,7 @@
           <?php echo $ko['floor plans']; ?>
         </div>
       </a></li>
-       <li><a href="http://bellevuetowers.com/#residences" class="scroll residences" title="Residences" target="_blank">
+       <li><a href="/#residences" class="scroll residences" title="Residences">
         <div class="translation en current">
           <?php echo $en['residences']; ?>
         </div>
@@ -52,7 +52,7 @@
           <?php echo $ko['residences']; ?>
         </div>
       </a></li>
-      <li><a href="http://bellevuetowers.com/#building" class="scroll building" title="Building" target="_blank">
+      <li><a href="/#building" class="scroll building" title="Building">
         <div class="translation en current">
           <?php echo $en['building']; ?>
         </div>
@@ -66,7 +66,7 @@
           <?php echo $ko['building']; ?>
         </div>
       </a></li>
-      <li><a href="http://bellevuetowers.com/#neighborhood" class="scroll neighborhood" title="Neighborhood" target="_blank">
+      <li><a href="/#neighborhood" class="scroll neighborhood" title="Neighborhood">
         <div class="translation en current">
           <?php echo $en['neighborhood']; ?>
         </div>
@@ -80,7 +80,7 @@
           <?php echo $ko['neighborhood']; ?>
         </div>
       </a></li>
-      <li><a href="http://bellevuetowers.com/#stories" class="scroll stories" title="Stories" target="_blank">
+      <li><a href="/#stories" class="scroll stories" title="Stories">
         <div class="translation en current">
           <?php echo $en['stories']; ?>
         </div>
@@ -94,7 +94,7 @@
           <?php echo $ko['stories']; ?>
         </div>
       </a></li>
-      <li><a href="http://bellevuetowers.com/#gallery" class="scroll gallery" title="Gallery" target="_blank">
+      <li><a href="/#gallery" class="scroll gallery" title="Gallery">
         <div class="translation en current">
           <?php echo $en['gallery']; ?>
         </div>
